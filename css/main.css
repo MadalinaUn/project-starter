@@ -1,1 +1,27 @@
-/* This is your custom CSS file */
+body {
+	background-color: #f6caec;
+}
+
+.logo {
+	max-width: 10rem;
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+
+.main_navigation {
+	position: fixed;
+	inset: 0 0 0 10%;
+	list-style: none;
+}
+
+a {
+	color:rgb(30, 22, 183);
+	text-decoration: none;
+}
+
+a:hover {
+	color:black;
+	text-decoration: none;
+}
+
+
