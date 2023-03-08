@@ -8,16 +8,27 @@
 	<title>All about nails</title>
 
 	<link rel="stylesheet" href="css/reboot.css" />
-	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 	<div class="header">
-		<nav class="navbar">
-			<img class="logo" src="./assets/logo.jpg" alt="nails" />
+		<nav class="navigation_bar flex">
+			<img class="logo_mobile" src="./assets/logo.mobile.png" alt="Lovely nails" />
+			<img class="logo_desktop" src="./assets/logo.desktop.png" alt="Lovely nails" />
 
-			<ul class="main_navigation">
+			<button
+				class="button_menu"
+				aria-controls="primaryNav"
+				aria-expanded="false">
+				<span class="sr-only">Menu</span>
+			</button>
+
+			<ul
+				id="primaryNav"
+				class="main_navigation flex"
+				data-visible="false">
 				<li class="navigation_item">
 					<a href="#">Anatomia unghiei</a>
 				</li>
@@ -42,15 +53,8 @@
 
 
 
-
-
-
-
-
-
-
-
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
