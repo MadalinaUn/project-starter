@@ -1,5 +1,6 @@
 :root {
 	--padding: 2rem;
+	--color: rgb(117, 7, 7)
 }
 
 
@@ -9,7 +10,7 @@ body {
 
 
 a {
-	color: rgb(117, 7, 7);
+	color: var(--color);
 	font-weight: 700;
 	font-style: italic;
 	text-decoration: none;
@@ -22,6 +23,7 @@ a:hover {
 }
 
 
+	/*HEADER*/
 .navigation_bar {
 	justify-content: space-between;
 	align-items: center;
@@ -130,5 +132,55 @@ a:hover {
 		top: 0;
 		left: 0;
 	}
-
 }
+
+@media screen and (max-width:47rem) {
+	.title_description {
+		display: none;
+
+	}
+}
+
+	/*CONTINER*/
+
+
+.bigtitle {
+	margin-left: var(--padding);
+	margin-right: var(--padding);
+	margin-top: 7rem;
+}
+
+.continer {
+	margin-left: var(--padding);
+	margin-right: var(--padding);
+}
+
+
+	/*HEADLINES*/
+.img1 {
+	position: absolute;
+	left: var(--padding);
+	width: min(50%, 30rem);
+}
+
+.title {
+	color: rgb(68, 7, 115);
+	position: absolute;
+	left:min(70%, 50rem);
+}
+
+.title_description {
+	position: absolute;
+	left:min(60%, 40rem);
+}
+
+
+	/*FOOTER*/
+.footer {
+	background-color: black;
+	margin-top: 5rem;
+	margin-left: -2rem;
+	margin-right: -2rem;
+}
+
+
